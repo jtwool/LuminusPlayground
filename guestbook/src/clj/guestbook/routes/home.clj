@@ -18,7 +18,7 @@
 (defn about-page []
   (layout/render "about.html"))
 
-(def message_schema
+(def message-schema
   [[:name
     st/required
     st/string]
@@ -36,7 +36,7 @@
     (-> (response/found "/")
         (assoc :flash (assoc params :errors errors)))
   (do
-    (db/save mesage!
+    (db/save-mesage!
       (assoc params :timestamp (java.util.Date.)))
     (response/found "/"))))
 
