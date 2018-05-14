@@ -32,3 +32,12 @@ body {
   }
 }
 
+.messages {background:white;width:520px;}
+ul{list_style:none;}
+ul.messages li {position:relative;font-size:1em;padding:.5em;
+	        border-bottom:1px dotted #ccc}
+li:last-child {border-bottom:none;}
+li time{font-size: .8em; padding-bottom:2em;}
+form, .error {padding:3em;margin-bottom:4.5em;
+              position:relative;background:white;}
+
