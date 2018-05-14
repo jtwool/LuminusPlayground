@@ -36,7 +36,7 @@
     (-> (response/found "/")
         (assoc :flash (assoc params :errors errors)))
   (do
-    (db/save-mesage!
+    (db/save-message!
       (assoc params :timestamp (java.util.Date.)))
     (response/found "/"))))
 
